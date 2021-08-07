@@ -10,8 +10,6 @@ for (var i = 0; i < 64; i++) {
     tbody.append(row);
 }
 
-
-
 const btnSubmit = $('.btn-submit');
 btnSubmit.on('click', () => {
     var inValue = $('.input-value');
@@ -21,7 +19,9 @@ btnSubmit.on('click', () => {
     //c1
     // $(rowOut).children('td').text(inValue.val());
     //c2
+   
     if (load.val() == 1) {
+        alert('Successfully!')
         var row = `
         <tr class = "row-out">
             <th class="col-5 output-address" scope="row">${inAddress.val()}</th>
@@ -29,9 +29,9 @@ btnSubmit.on('click', () => {
         </tr>
         `
         rowOut.innerHTML = row
-
-
+        $('.row-out').css('background-color',"white")
+        $(rowOut).css('background-color',"yellow")
+    }else{
+        alert('reject!!')
     }
-
-
 })
