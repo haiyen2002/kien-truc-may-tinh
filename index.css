@@ -1,0 +1,29 @@
+.table{
+    display: block;
+    min-width: 200px;
+}
+thead {
+    display: block;
+    width: 100%;
+}
+
+th{
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}
+
+tr{
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+tbody{
+    display: block;
+    height: 400px;
+    overflow: scroll;
+    width: 100%;
+}
